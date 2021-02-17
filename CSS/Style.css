@@ -15,6 +15,7 @@ font-family: 'VT323', monospace;
     background-repeat: no-repeat;
     background-attachment: scroll;
     height: 450px;
+    overflow: hidden;
 }
 
 #navbar{
@@ -33,10 +34,13 @@ font-family: 'VT323', monospace;
     border-bottom: 1.75px dotted #FFFFFF;
     color: #FFFFFF;
     float: left;
+    z-index: 99;
 }
 
 #navbar a:hover {
-    font-style: oblique;
+    font-style: italic;
+    border-bottom: 1.75px dotted #f2f2f2;
+    cursor: pointer;
 }
 
 .overview{
@@ -44,6 +48,21 @@ font-family: 'VT323', monospace;
     margin-left: auto;
     padding: 10px;
     padding-bottom: 0px;
+}
+
+.gunsafety{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.confirmation{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background-color: #FFFFFF;
+    width: 80%;
+    padding-bottom: 70px;
 }
 
 #container{
@@ -64,6 +83,7 @@ h1{
     line-height: 500px;
     text-shadow: 15px 10px 15px #000000;
     font-family: 'VT323', monospace;
+    z-index: 1;
 }
 
 h2{
@@ -99,21 +119,23 @@ footer{
 div.gallery {
     border-radius: 5px;
     border: 1px solid #ccc;
-    height: 250px;
-    padding-top: 10px;
+    height: 275px;
+    padding-top: 15px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
 div.gallery:hover {
     border: 1.75px dotted #777;
+
 }
 
-#ak47, #spas12 {
+#longbarrel {
     width: 100%;
     height: auto;
 }
 
-#fnx45, #glock23 {
+#shortbarrel {
     width: 50%;
     height: auto;
 }
@@ -187,4 +209,59 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.share {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.share .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 25px;
+}
+
+.share.facebook,
+.share.twitter,
+.share.reddit,
+.share.google
+ {
+    background: #000000;
+}
+
+.share:hover {
+    width: 70px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container .section {
+    margin-bottom: 15px;
+    line-height: 22px;
 }
