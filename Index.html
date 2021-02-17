@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/Style.css">
+
+        <!-- TITLE HERE -->
+        <title>Geneva's Final Project</title>
+</head>
+
+<body>
+
+        <!-- HEADER HERE -->
+        <div id="header">
+            <h1>Guns Galore</h1>
+        </div>
+
+        <!-- NAVBAR HERE -->
+        <div id="navbar">
+            <a href="Index.html">Home</a>
+            <a href="Index.html#gallery">Gallery</a>
+            <a href="About.html">About</a>
+            <a href="Index.html#contact">Contact</a>
+        </div>
+
+        <div id="container">
+
+        <!-- LOGO AND OVERVIEW HERE -->
+        <div class="overview">
+            <img src="../Img/panda_logo.png" alt="logo" id="logo" style="position: absolute;"><br><br><br>
+            
+            <marquee direction="up" width="100%" height="50" behavior="slide" style="border:none">
+            <marquee behavior="alternate">
+            <h3>"THE BOSS OF ALL BOSSES."</h3>
+            </marquee>
+            </marquee>
+
+            <h2>O V E R V I E W //</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+        </div>
+
+        <!-- GALLERY HERE -->
+        <div id="gallery">
+        <h2>G A L L E R Y //</h2><br>
+        <div class="responsive">
+        <div class="gallery">
+            <div class="desc">AK-47</div>
+            <a target="_blank" href="../Img/ak47.png">
+            <img src="../Img/ak47.png" alt="ak47" id="ak47" width="600" height="400">
+            </a>
+                <p>Avtomat Kalashnikova 1947<br>
+                $1,399.99</p>
+        </div>
+        </div>
+
+
+        <div class="responsive">
+        <div class="gallery">
+            <div class="desc">FNX-45</div>
+            <a target="_blank" href="../Img/fnx45.png">
+            <img src="../Img/fnx45.png" alt="fnx45" id="fnx45" width="600" height="400">
+            </a>
+                <p>Fabrique Nationale X .45 Caliber<br>
+                $824.00</p>
+                
+        </div>
+        </div>
+
+        <div class="responsive">
+        <div class="gallery">
+            <div class="desc">SPAS-12</div>
+            <a target="_blank" href="../Img/spas12.png">
+            <img src="../Img/spas12.png" alt="spas12" id="spas12" width="600" height="400">
+            </a>
+                <p>Special Purpose Automatic Shotgun 12g<br>
+                $1,799.99</p>
+        </div>
+        </div>
+
+        <div class="responsive">
+        <div class="gallery">
+            <div class="desc">G-23</div>
+            <a target="_blank" href="..Img/glock23.jpg">
+            <img src="../Img/glock23.jpg" alt="glock23" id="glock23" width="600" height="400">
+            </a>
+            <p>Glock 23<br>
+            $699.99</p>
+        </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div style="padding:6px;">
+       </div>
+       </div>
+        <!-- CONTACT FORM HERE -->
+        <div class="contact">
+            <h2>C O N T A C T //</h2>
+
+            <div class="container">
+            <form action="/action_page.php">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="fullname" placeholder="First and Last">
+
+                <label for="email">E-mail *</label>
+                <input type="text" id="email" name="email" placeholder="johndoe@email.com">
+
+                <label for="product">Product of Interest *</label>
+                <select id="product" name="product">
+                <option value="ak47">AK-47</option>
+                <option value="fnx45">FNX-45</option>
+                <option value="spas12">SPAS-12</option>
+                <option value="glock23">GLOCK-23</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+            </div>
+
+            </div>  
+        </div>
+
+        <!-- FOOTER HERE -->
+        <footer>
+            <p>Guns Galore, Inc. &trade; 2021 &copy;
+            SINCE 1996 - ALL RIGHTS RESERVED.</p>
+        </footer>
+
+</body>
+</html>
