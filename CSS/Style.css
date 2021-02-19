@@ -6,6 +6,7 @@ background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
 font-family: 'VT323', monospace;
+cursor: crosshair
 }
 
 #header{
@@ -40,12 +41,13 @@ font-family: 'VT323', monospace;
 #navbar a:hover {
     font-style: italic;
     border-bottom: 1.75px dotted #f2f2f2;
-    cursor: pointer;
+    cursor: crosshair;
 }
 
 .overview{
     margin-right: auto;
     margin-left: auto;
+    text-align: justify;
     padding: 10px;
     padding-bottom: 0px;
 }
@@ -87,7 +89,7 @@ h1{
 }
 
 h2{
-    width: 500px;
+    width: 400px;
     border-bottom: 1.75px dotted #000000;
     height: 20px;
     margin-top: 20px;
@@ -103,9 +105,9 @@ h3, h4{
 }
 
 #logo{
-    margin-bottom: 15px;
-    height: 150px;
-    width: 150px;
+    margin-bottom: 5px;
+    height: 125px;
+    width: 125px;
     border-radius: 150%;
 }
 
@@ -127,7 +129,8 @@ div.gallery {
 
 div.gallery:hover {
     border: 1.75px dotted #777;
-
+    background-color: #f2f2f2;
+    cursor: crosshair;
 }
 
 #longbarrel {
@@ -141,7 +144,7 @@ div.gallery:hover {
 }
 
 div.desc {
-    padding: 15px;
+    padding: 20px;
     text-align: center;
     font-size: 20px;
 }
@@ -198,7 +201,7 @@ input[type=submit] {
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: crosshair;
 }
 
 input[type=submit]:hover {
@@ -224,9 +227,9 @@ input[type=submit]:hover {
 
 .share {
     width: 50px;
-    height: 50px;
+    height: 65px;
     position: relative;
-    cursor: pointer;
+    cursor: crosshair;
     transition: all 0.2s linear;
 }
 
